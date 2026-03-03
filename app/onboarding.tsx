@@ -20,6 +20,7 @@ import Animated, {
   interpolate,
   withTiming,
   Extrapolation,
+  type SharedValue,
 } from 'react-native-reanimated';
 import { colors, spacing, borderRadius, typography } from '../src/theme';
 import { H1, Body, Button } from '../src/components/ui';
@@ -130,7 +131,7 @@ function PageContent({
 }: {
   page: OnboardingPage;
   index: number;
-  scrollX: Animated.SharedValue<number>;
+  scrollX: SharedValue<number>;
   isLast: boolean;
   onGetStarted: () => void;
 }) {
@@ -201,7 +202,7 @@ function DotIndicator({
   scrollX,
 }: {
   index: number;
-  scrollX: Animated.SharedValue<number>;
+  scrollX: SharedValue<number>;
 }) {
   const animatedStyle = useAnimatedStyle(() => {
     const inputRange = [

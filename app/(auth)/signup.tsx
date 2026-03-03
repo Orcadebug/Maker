@@ -13,7 +13,6 @@ import { router, Link } from 'expo-router';
 import { colors, spacing } from '../../src/theme';
 import { Button, Input, H1, Body } from '../../src/components/ui';
 import { signUp } from '../../src/services/auth';
-import { useAuthStore } from '../../src/stores/authStore';
 
 export default function SignUpScreen() {
   const [name, setName] = useState('');

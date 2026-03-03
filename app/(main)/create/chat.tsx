@@ -268,6 +268,8 @@ const styles = StyleSheet.create({
     marginHorizontal: spacing.sm,
   },
   previewButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
     paddingVertical: spacing.xs,
     paddingHorizontal: spacing.md,
     borderRadius: borderRadius.sm,
